@@ -1,81 +1,324 @@
 
-/* ページ全体 */
+/* =========================
+   基本設定
+========================= */
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
     font-family: "Arial", "Meiryo", sans-serif;
-    background-color: #10131c;
-    color: #eeeeee;
+    background-color: #101522;
+    color: #e8edf7;
     line-height: 1.8;
 }
 
-/* ヘッダー */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   ヘッダー・ナビゲーション
+========================= */
+
 header {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #182848, #10131c);
+    min-height: 600px;
+    background: linear-gradient(135deg, #192b4a, #101522 75%);
+    border-bottom: 1px solid #293a58;
 }
 
-header h1 {
-    font-size: 42px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: rgba(12, 18, 31, 0.8);
+    border-bottom: 1px solid #293a58;
+}
+
+.logo {
+    color: #79aaff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    font-size: 13px;
+    color: #c5d0e2;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #79aaff;
+}
+
+/* =========================
+   メインビジュアル
+========================= */
+
+.hero {
+    max-width: 1000px;
+    margin: auto;
+    padding: 130px 30px;
+}
+
+.hero-subtitle {
+    color: #79aaff;
     letter-spacing: 4px;
-    margin-bottom: 10px;
+    font-size: 13px;
+    margin-bottom: 20px;
 }
 
-header p {
-    color: #8da9d6;
-    font-size: 18px;
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.15;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
 }
 
-/* メイン */
+.hero > p:not(.hero-subtitle) {
+    color: #b8c5d9;
+    margin-bottom: 35px;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 13px 28px;
+    border: 1px solid #6599ed;
+    border-radius: 5px;
+    color: #8eb8ff;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background-color: #5685d8;
+    color: white;
+}
+
+/* =========================
+   メインコンテンツ
+========================= */
+
 main {
-    max-width: 900px;
-    margin: 50px auto;
+    max-width: 1050px;
+    margin: 70px auto;
     padding: 0 25px;
 }
 
-/* 各セクション */
 section {
-    background-color: #1b2030;
-    padding: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
+    padding: 45px;
+    background-color: #1a2233;
+    border: 1px solid #2c3a54;
     border-radius: 12px;
-    border-left: 4px solid #5685d8;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-section h2 {
+.section-number {
     color: #79aaff;
-    letter-spacing: 2px;
-    border-bottom: 1px solid #39445b;
-    padding-bottom: 10px;
-}
-
-/* リスト */
-li {
+    font-size: 12px;
+    letter-spacing: 3px;
     margin-bottom: 8px;
 }
 
-/* フッター */
-footer {
-    text-align: center;
+section h2 {
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #35445f;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: #8eb8ff;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+section p {
+    color: #c3cede;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   スキル
+========================= */
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.skill-card {
+    padding: 22px;
+    background-color: #222e43;
+    border: 1px solid #354b6b;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #79aaff;
+}
+
+.skill-card h3 {
+    color: #79aaff;
+    font-size: 23px;
+}
+
+.skill-card p {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+/* =========================
+   作品紹介
+========================= */
+
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 30px;
+    margin-top: 30px;
     padding: 25px;
-    background-color: #0b0d13;
-    color: #888888;
+    background-color: #222e43;
+    border: 1px solid #354b6b;
+    border-radius: 10px;
+}
+
+.project-image {
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #273f65, #111b2d);
+    border: 1px solid #45638e;
+    border-radius: 8px;
+}
+
+.project-image span {
+    color: #9bbfff;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.project-category {
+    color: #79aaff;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.project-content h3 {
+    font-size: 22px;
+}
+
+.project-content p {
     font-size: 14px;
 }
 
-/* スマートフォン対応 */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 28px;
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.tags span {
+    padding: 5px 13px;
+    background-color: #31476a;
+    border-radius: 20px;
+    color: #c6dcff;
+    font-size: 12px;
+}
+
+.project-content .project-status {
+    color: #82b5ff;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* =========================
+   フッター
+========================= */
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background-color: #0b101b;
+    border-top: 1px solid #293a58;
+}
+
+footer p {
+    color: #8290a7;
+    font-size: 13px;
+    margin: 5px;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   スマートフォン対応
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 100px 25px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    main {
+        margin: 40px auto;
+        padding: 0 15px;
     }
 
     section {
-        padding: 20px;
+        padding: 25px 20px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .project-image {
+        min-height: 180px;
     }
 }
-
-
