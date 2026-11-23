@@ -1,1 +1,81 @@
 
+/* ページ全体 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Arial", "Meiryo", sans-serif;
+    background-color: #10131c;
+    color: #eeeeee;
+    line-height: 1.8;
+}
+
+/* ヘッダー */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #182848, #10131c);
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #8da9d6;
+    font-size: 18px;
+}
+
+/* メイン */
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 25px;
+}
+
+/* 各セクション */
+section {
+    background-color: #1b2030;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #5685d8;
+}
+
+section h2 {
+    color: #79aaff;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #39445b;
+    padding-bottom: 10px;
+}
+
+/* リスト */
+li {
+    margin-bottom: 8px;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #0b0d13;
+    color: #888888;
+    font-size: 14px;
+}
+
+/* スマートフォン対応 */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+
