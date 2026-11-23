@@ -11,10 +11,10 @@
 }
 
 body {
-    font-family: "Arial", "Meiryo", sans-serif;
+    font-family: "Meiryo", "Yu Gothic", sans-serif;
     background-color: #101522;
     color: #e8edf7;
-    line-height: 1.8;
+    line-height: 1.9;
 }
 
 a {
@@ -23,11 +23,11 @@ a {
 }
 
 /* =========================
-   ヘッダー・ナビゲーション
+   ヘッダー
 ========================= */
 
 header {
-    min-height: 600px;
+    min-height: 620px;
     background: linear-gradient(135deg, #192b4a, #101522 75%);
     border-bottom: 1px solid #293a58;
 }
@@ -36,8 +36,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 8%;
-    background-color: rgba(12, 18, 31, 0.8);
+    padding: 22px 8%;
+    background-color: rgba(12, 18, 31, 0.85);
     border-bottom: 1px solid #293a58;
 }
 
@@ -45,6 +45,7 @@ nav {
     color: #79aaff;
     font-size: 20px;
     letter-spacing: 2px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -54,7 +55,7 @@ nav ul {
 }
 
 nav a {
-    font-size: 13px;
+    font-size: 14px;
     color: #c5d0e2;
     transition: 0.3s;
 }
@@ -70,31 +71,32 @@ nav a:hover {
 .hero {
     max-width: 1000px;
     margin: auto;
-    padding: 130px 30px;
+    padding: 135px 30px;
 }
 
 .hero-subtitle {
     color: #79aaff;
-    letter-spacing: 4px;
-    font-size: 13px;
+    letter-spacing: 3px;
+    font-size: 15px;
     margin-bottom: 20px;
 }
 
 .hero h1 {
     font-size: clamp(42px, 7vw, 76px);
-    line-height: 1.15;
+    line-height: 1.3;
     letter-spacing: 3px;
     margin-bottom: 25px;
 }
 
-.hero > p:not(.hero-subtitle) {
+.hero-description {
     color: #b8c5d9;
     margin-bottom: 35px;
+    font-size: 16px;
 }
 
 .main-button {
     display: inline-block;
-    padding: 13px 28px;
+    padding: 12px 30px;
     border: 1px solid #6599ed;
     border-radius: 5px;
     color: #8eb8ff;
@@ -127,15 +129,15 @@ section {
 
 .section-number {
     color: #79aaff;
-    font-size: 12px;
-    letter-spacing: 3px;
+    font-size: 13px;
+    letter-spacing: 2px;
     margin-bottom: 8px;
 }
 
 section h2 {
     font-size: 30px;
     color: #ffffff;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     border-bottom: 1px solid #35445f;
     padding-bottom: 15px;
     margin-bottom: 25px;
@@ -152,8 +154,20 @@ section p {
     margin-bottom: 15px;
 }
 
+.section-description {
+    margin-bottom: 25px;
+}
+
 /* =========================
-   スキル
+   自己紹介
+========================= */
+
+.profile-content {
+    padding: 10px 0;
+}
+
+/* =========================
+   使用技術
 ========================= */
 
 .skill-list {
@@ -178,16 +192,16 @@ section p {
 
 .skill-card h3 {
     color: #79aaff;
-    font-size: 23px;
+    font-size: 22px;
 }
 
 .skill-card p {
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 0;
 }
 
 /* =========================
-   作品紹介
+   制作作品
 ========================= */
 
 .project-card {
@@ -202,7 +216,7 @@ section p {
 }
 
 .project-image {
-    min-height: 260px;
+    min-height: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,14 +227,14 @@ section p {
 
 .project-image span {
     color: #9bbfff;
-    font-size: 14px;
-    letter-spacing: 3px;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 
 .project-category {
     color: #79aaff;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 .project-content h3 {
@@ -243,13 +257,21 @@ section p {
     background-color: #31476a;
     border-radius: 20px;
     color: #c6dcff;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .project-content .project-status {
     color: #82b5ff;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   今後の目標
+========================= */
+
+.goals-content {
+    padding: 10px 0;
 }
 
 /* =========================
@@ -267,7 +289,17 @@ footer p {
     color: #8290a7;
     font-size: 13px;
     margin: 5px;
-    letter-spacing: 1px;
+}
+
+footer .footer-title {
+    color: #79aaff;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+footer .copyright {
+    margin-top: 15px;
 }
 
 /* =========================
@@ -289,7 +321,7 @@ footer p {
     }
 
     nav a {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .hero {
