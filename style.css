@@ -1,5 +1,8 @@
 
-/* 基本設定 */
+/* =========================
+   基本設定
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +22,14 @@ a {
     color: inherit;
 }
 
-/* ヘッダー */
+/* =========================
+   ヘッダー
+========================= */
+
 header {
-    min-height: 500px;
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(135deg, #192b4a, #101522 75%);
     border-bottom: 1px solid #293a58;
 }
@@ -37,7 +45,7 @@ nav {
 
 .logo {
     color: #79aaff;
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: 2px;
     font-weight: bold;
 }
@@ -49,7 +57,7 @@ nav ul {
 }
 
 nav a {
-    font-size: 14px;
+    font-size: 16px;
     color: #c5d0e2;
     transition: 0.3s;
 }
@@ -58,34 +66,55 @@ nav a:hover {
     color: #79aaff;
 }
 
-/* メイン画面 */
+/* =========================
+   トップ画面
+========================= */
+
 .hero {
-    max-width: 1000px;
-    margin: auto;
-    padding: 120px 30px;
+    flex: 1;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
 }
 
 .hero-description {
-    color: #b8c5d9;
+    color: #d0dced;
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 21px;
+    line-height: 2.2;
+    letter-spacing: 1px;
 }
 
 .main-button {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 15px 40px;
     border: 1px solid #6599ed;
-    border-radius: 5px;
+    border-radius: 6px;
     color: #8eb8ff;
+    font-size: 18px;
+    background-color: rgba(86, 133, 216, 0.05);
     transition: 0.3s;
 }
 
 .main-button:hover {
     background-color: #5685d8;
     color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(86, 133, 216, 0.2);
 }
 
-/* メインコンテンツ */
+/* =========================
+   メインコンテンツ
+========================= */
+
 main {
     max-width: 1050px;
     margin: 70px auto;
@@ -132,12 +161,18 @@ section p {
     margin-bottom: 25px;
 }
 
-/* 自己紹介 */
+/* =========================
+   自己紹介
+========================= */
+
 .profile-content {
     padding: 10px 0;
 }
 
-/* 使用技術 */
+/* =========================
+   使用技術
+========================= */
+
 .skill-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -168,7 +203,10 @@ section p {
     margin-bottom: 0;
 }
 
-/* 制作作品 */
+/* =========================
+   制作作品
+========================= */
+
 .project-card {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
@@ -233,12 +271,18 @@ section p {
     letter-spacing: 1px;
 }
 
-/* 今後の目標 */
+/* =========================
+   今後の目標
+========================= */
+
 .goals-content {
     padding: 10px 0;
 }
 
-/* フッター */
+/* =========================
+   フッター
+========================= */
+
 footer {
     padding: 35px 20px;
     text-align: center;
@@ -263,8 +307,15 @@ footer .copyright {
     margin-top: 15px;
 }
 
-/* スマートフォン対応 */
+/* =========================
+   スマートフォン対応
+========================= */
+
 @media (max-width: 700px) {
+
+    header {
+        min-height: 550px;
+    }
 
     nav {
         flex-direction: column;
@@ -282,8 +333,21 @@ footer .copyright {
         font-size: 12px;
     }
 
+    .logo {
+        font-size: 21px;
+    }
+
     .hero {
-        padding: 80px 25px;
+        padding: 70px 20px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .main-button {
+        font-size: 16px;
+        padding: 12px 30px;
     }
 
     main {
