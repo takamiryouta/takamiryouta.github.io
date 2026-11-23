@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="プログラミングや趣味のゲーム制作について紹介するポートフォリオです。">
+    <title>プログラミング・ゲーム制作ポートフォリオ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,55 +13,71 @@
     <!-- ヘッダー -->
     <header id="home">
         <nav>
-            <h2 class="logo">MY PORTFOLIO</h2>
+            <a href="#home" class="logo">MY PORTFOLIO</a>
+
             <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#profile">PROFILE</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#goals">GOALS</a></li>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#profile">自己紹介</a></li>
+                <li><a href="#skills">使用技術</a></li>
+                <li><a href="#projects">制作作品</a></li>
+                <li><a href="#goals">今後の目標</a></li>
             </ul>
         </nav>
 
         <div class="hero">
-            <p class="hero-subtitle">PROGRAMMING & GAME DEVELOPMENT</p>
-            <h1>CREATE<br>YOUR OWN IDEAS.</h1>
-            <a href="#projects" class="main-button">VIEW MY PROJECT</a>
+            <p class="hero-subtitle">プログラミングとゲーム制作</p>
+
+            <h1>
+                自分のアイデアを<br>
+                形にする。
+            </h1>
+
+            <p class="hero-description">
+                プログラミングを学びながら、<br>
+                趣味でゲーム制作に挑戦しています。
+            </p>
+
+            <a href="#projects" class="main-button">作品を見る</a>
         </div>
     </header>
 
     <main>
 
-        <!-- プロフィール -->
+        <!-- 自己紹介 -->
         <section id="profile">
-            <p class="section-number">01 / ABOUT</p>
-            <h2>PROFILE</h2>
-            <h3>プログラミングとゲーム制作</h3>
+            <p class="section-number">01 / 自己紹介</p>
+            <h2>自己紹介</h2>
 
-            <p>
-                こんにちは。現在、大学でプログラミングや
-                情報技術について学んでいます。
-            </p>
+            <div class="profile-content">
+                <h3>プログラミングとゲーム制作</h3>
 
-            <p>
-                C言語、C#、Pythonなどを学習しており、
-                趣味としてゲーム制作にも取り組んでいます。
-                UnityやDXライブラリなどを使いながら、
-                自分のアイデアを形にすることを楽しんでいます。
-            </p>
+                <p>
+                    こんにちは。現在、大学でプログラミングや
+                    情報技術について学んでいます。
+                </p>
+
+                <p>
+                    C言語、C#、Pythonなどを学習しており、
+                    趣味としてゲーム制作にも取り組んでいます。
+                    UnityやDXライブラリなどを使いながら、
+                    自分のアイデアを形にすることを楽しんでいます。
+                </p>
+            </div>
         </section>
 
-        <!-- スキル -->
+        <!-- 使用技術 -->
         <section id="skills">
-            <p class="section-number">02 / TECHNOLOGY</p>
-            <h2>SKILLS</h2>
+            <p class="section-number">02 / 使用技術</p>
+            <h2>使用技術</h2>
 
-            <p>これまでに学習してきたプログラミング言語や開発ツールです。</p>
+            <p class="section-description">
+                これまでに学習してきたプログラミング言語や開発ツールです。
+            </p>
 
             <div class="skill-list">
 
                 <div class="skill-card">
-                    <h3>C</h3>
+                    <h3>C言語</h3>
                     <p>プログラミングの基礎を学習</p>
                 </div>
 
@@ -80,7 +97,7 @@
                 </div>
 
                 <div class="skill-card">
-                    <h3>DX Library</h3>
+                    <h3>DXライブラリ</h3>
                     <p>C言語を使ったゲーム制作</p>
                 </div>
 
@@ -89,19 +106,22 @@
 
         <!-- 制作作品 -->
         <section id="projects">
-            <p class="section-number">03 / WORKS</p>
-            <h2>PROJECTS</h2>
+            <p class="section-number">03 / 制作作品</p>
+            <h2>制作作品</h2>
 
-            <p>趣味で制作しているゲーム作品を紹介します。</p>
+            <p class="section-description">
+                趣味で制作しているゲーム作品を紹介します。
+            </p>
 
             <div class="project-card">
 
                 <div class="project-image">
-                    <span>GAME PROJECT 01</span>
+                    <span>制作作品 01</span>
                 </div>
 
                 <div class="project-content">
-                    <p class="project-category">RPG / DX LIBRARY</p>
+
+                    <p class="project-category">RPG / DXライブラリ</p>
 
                     <h3>オリジナルファンタジーRPG</h3>
 
@@ -123,42 +143,45 @@
 
                     <div class="tags">
                         <span>C言語</span>
-                        <span>DX Library</span>
+                        <span>DXライブラリ</span>
                         <span>RPG</span>
                     </div>
 
                     <p class="project-status">
-                        STATUS : IN DEVELOPMENT
+                        制作状況：開発中
                     </p>
-                </div>
 
+                </div>
             </div>
         </section>
 
         <!-- 今後の目標 -->
         <section id="goals">
-            <p class="section-number">04 / FUTURE</p>
-            <h2>FUTURE GOALS</h2>
+            <p class="section-number">04 / 今後の目標</p>
+            <h2>今後の目標</h2>
 
-            <h3>これから挑戦したいこと</h3>
+            <div class="goals-content">
+                <h3>これから挑戦したいこと</h3>
 
-            <p>
-                これからもプログラミングの知識や技術を身につけ、
-                さまざまなゲーム制作や開発に挑戦していきたいです。
-            </p>
+                <p>
+                    これからもプログラミングの知識や技術を身につけ、
+                    さまざまなゲーム制作や開発に挑戦していきたいです。
+                </p>
 
-            <p>
-                自分で考えたアイデアを実際に動く作品にできるよう、
-                少しずつ技術を磨いていきたいと思っています。
-            </p>
+                <p>
+                    自分で考えたアイデアを実際に動く作品にできるよう、
+                    少しずつ技術を磨いていきたいと思っています。
+                </p>
+            </div>
         </section>
 
     </main>
 
     <!-- フッター -->
     <footer>
-        <p>MY PORTFOLIO</p>
-        <p>© 2026 My Portfolio</p>
+        <p class="footer-title">MY PORTFOLIO</p>
+        <p>プログラミング・ゲーム制作ポートフォリオ</p>
+        <p class="copyright">© 2026 My Portfolio</p>
     </footer>
 
 </body>
