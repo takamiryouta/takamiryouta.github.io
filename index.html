@@ -4,50 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Game Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>MY GAME PORTFOLIO</h1>
-        <p>Game Developer Portfolio</p>
+    <!-- ヘッダー -->
+    <header id="home">
+        <nav>
+            <h2 class="logo">MY PORTFOLIO</h2>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#goals">GOALS</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <p class="hero-subtitle">PROGRAMMING & GAME DEVELOPMENT</p>
+            <h1>CREATE<br>YOUR OWN IDEAS.</h1>
+            <p>プログラミングで、自分のアイデアを形にする。</p>
+            <a href="#projects" class="main-button">VIEW MY PROJECT</a>
+        </div>
     </header>
 
     <main>
-        <section>
+
+        <!-- プロフィール -->
+        <section id="profile">
+            <p class="section-number">01 / ABOUT</p>
             <h2>PROFILE</h2>
-            <p>こんにちは！ゲームプログラマーを目指して勉強しています。</p>
-            <p>プログラミングやゲーム制作を通して、さまざまな技術を学んでいます。</p>
+            <h3>プログラミングとゲーム制作</h3>
+
+            <p>
+                こんにちは。現在、大学でプログラミングや
+                情報技術について学んでいます。
+            </p>
+
+            <p>
+                C言語、C#、Pythonなどを学習しており、
+                趣味としてゲーム制作にも取り組んでいます。
+                UnityやDXライブラリなどを使いながら、
+                自分のアイデアを形にすることを楽しんでいます。
+            </p>
         </section>
 
-        <section>
+        <!-- スキル -->
+        <section id="skills">
+            <p class="section-number">02 / TECHNOLOGY</p>
             <h2>SKILLS</h2>
-            <ul>
-                <li>C言語</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>Unity</li>
-                <li>DXライブラリ</li>
-            </ul>
+
+            <p>これまでに学習してきたプログラミング言語や開発ツールです。</p>
+
+            <div class="skill-list">
+
+                <div class="skill-card">
+                    <h3>C</h3>
+                    <p>プログラミングの基礎を学習</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>C#</h3>
+                    <p>ゲーム開発を学習</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Python</h3>
+                    <p>プログラミングやゲーム制作</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Unity</h3>
+                    <p>2D・3Dゲーム開発</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>DX Library</h3>
+                    <p>C言語を使ったゲーム制作</p>
+                </div>
+
+            </div>
         </section>
 
-        <section>
+        <!-- 制作作品 -->
+        <section id="projects">
+            <p class="section-number">03 / WORKS</p>
             <h2>PROJECTS</h2>
-            <p>これまでに制作したゲーム作品を紹介します。</p>
-            <p>現在、さまざまなジャンルのゲーム制作に挑戦しています。</p>
+
+            <p>趣味で制作しているゲーム作品を紹介します。</p>
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <span>GAME PROJECT 01</span>
+                </div>
+
+                <div class="project-content">
+                    <p class="project-category">RPG / DX LIBRARY</p>
+
+                    <h3>オリジナルファンタジーRPG</h3>
+
+                    <p>
+                        DXライブラリを使用して制作している
+                        オリジナルRPGです。
+                    </p>
+
+                    <p>
+                        王道ファンタジーの世界を舞台に、
+                        村や町、森、洞窟、魔王城などを冒険する
+                        RPGを目指しています。
+                    </p>
+
+                    <p>
+                        コマンド形式の戦闘システムを取り入れ、
+                        ゲームの基本的な仕組みを一つずつ実装しています。
+                    </p>
+
+                    <div class="tags">
+                        <span>C言語</span>
+                        <span>DX Library</span>
+                        <span>RPG</span>
+                    </div>
+
+                    <p class="project-status">
+                        STATUS : IN DEVELOPMENT
+                    </p>
+                </div>
+
+            </div>
         </section>
 
-        <section>
+        <!-- 今後の目標 -->
+        <section id="goals">
+            <p class="section-number">04 / FUTURE</p>
             <h2>FUTURE GOALS</h2>
-            <p>将来はゲームプログラマーとして、多くの人に楽しんでもらえるゲームを作りたいです。</p>
+
+            <h3>これから挑戦したいこと</h3>
+
+            <p>
+                これからもプログラミングの知識や技術を身につけ、
+                さまざまなゲーム制作や開発に挑戦していきたいです。
+            </p>
+
+            <p>
+                自分で考えたアイデアを実際に動く作品にできるよう、
+                少しずつ技術を磨いていきたいと思っています。
+            </p>
         </section>
+
     </main>
 
+    <!-- フッター -->
     <footer>
-        <p>© 2026 My Game Portfolio</p>
+        <p>MY PORTFOLIO</p>
+        <p>© 2026 My Portfolio</p>
     </footer>
 
 </body>
 </html>
-
