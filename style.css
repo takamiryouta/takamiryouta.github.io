@@ -1,8 +1,5 @@
 
-/* =========================
-   基本設定
-========================= */
-
+/* 基本設定 */
 * {
     margin: 0;
     padding: 0;
@@ -22,12 +19,9 @@ a {
     color: inherit;
 }
 
-/* =========================
-   ヘッダー
-========================= */
-
+/* ヘッダー */
 header {
-    min-height: 620px;
+    min-height: 500px;
     background: linear-gradient(135deg, #192b4a, #101522 75%);
     border-bottom: 1px solid #293a58;
 }
@@ -64,34 +58,17 @@ nav a:hover {
     color: #79aaff;
 }
 
-/* =========================
-   メインビジュアル
-========================= */
-
+/* メイン画面 */
 .hero {
     max-width: 1000px;
     margin: auto;
-    padding: 135px 30px;
-}
-
-.hero-subtitle {
-    color: #79aaff;
-    letter-spacing: 3px;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-
-.hero h1 {
-    font-size: clamp(42px, 7vw, 76px);
-    line-height: 1.3;
-    letter-spacing: 3px;
-    margin-bottom: 25px;
+    padding: 120px 30px;
 }
 
 .hero-description {
     color: #b8c5d9;
     margin-bottom: 35px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .main-button {
@@ -108,10 +85,7 @@ nav a:hover {
     color: white;
 }
 
-/* =========================
-   メインコンテンツ
-========================= */
-
+/* メインコンテンツ */
 main {
     max-width: 1050px;
     margin: 70px auto;
@@ -158,18 +132,12 @@ section p {
     margin-bottom: 25px;
 }
 
-/* =========================
-   自己紹介
-========================= */
-
+/* 自己紹介 */
 .profile-content {
     padding: 10px 0;
 }
 
-/* =========================
-   使用技術
-========================= */
-
+/* 使用技術 */
 .skill-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -200,10 +168,7 @@ section p {
     margin-bottom: 0;
 }
 
-/* =========================
-   制作作品
-========================= */
-
+/* 制作作品 */
 .project-card {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
@@ -216,19 +181,21 @@ section p {
 }
 
 .project-image {
-    min-height: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #273f65, #111b2d);
+    min-width: 0;
+    overflow: hidden;
+    background-color: #0b101b;
     border: 1px solid #45638e;
     border-radius: 8px;
 }
 
-.project-image span {
-    color: #9bbfff;
-    font-size: 16px;
-    letter-spacing: 2px;
+.project-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .project-category {
@@ -266,18 +233,12 @@ section p {
     letter-spacing: 1px;
 }
 
-/* =========================
-   今後の目標
-========================= */
-
+/* 今後の目標 */
 .goals-content {
     padding: 10px 0;
 }
 
-/* =========================
-   フッター
-========================= */
-
+/* フッター */
 footer {
     padding: 35px 20px;
     text-align: center;
@@ -302,10 +263,7 @@ footer .copyright {
     margin-top: 15px;
 }
 
-/* =========================
-   スマートフォン対応
-========================= */
-
+/* スマートフォン対応 */
 @media (max-width: 700px) {
 
     nav {
@@ -325,11 +283,7 @@ footer .copyright {
     }
 
     .hero {
-        padding: 100px 25px;
-    }
-
-    .hero h1 {
-        font-size: 42px;
+        padding: 80px 25px;
     }
 
     main {
@@ -351,6 +305,6 @@ footer .copyright {
     }
 
     .project-image {
-        min-height: 180px;
+        width: 100%;
     }
 }
